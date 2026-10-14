@@ -3,181 +3,640 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="An independent overview of The Genius Wave, its advertised format, purchase considerations, and seller information.">
-  <title>The Genius Wave | Product Overview</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>The Genius Wave Review: What to Know Before Buying</title>
+
+  <meta
+    name="description"
+    content="Read our independent The Genius Wave review. Explore product details, buying considerations, seller terms, and questions to ask before purchasing."
+  >
+
+  <meta name="robots" content="index, follow">
+
+  <link
+    rel="canonical"
+    href="https://marcos-2p.github.io/genius-wave-site/"
+  >
+
+  <meta name="theme-color" content="#102a43">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="The Genius Wave Review: What to Know Before Buying">
+  <meta
+    property="og:description"
+    content="An independent overview of The Genius Wave, with product information and important considerations before buying."
+  >
+  <meta
+    property="og:url"
+    content="https://marcos-2p.github.io/genius-wave-site/"
+  >
+
   <style>
-    * { box-sizing: border-box; }
+    :root {
+      --navy: #102a43;
+      --blue: #1769aa;
+      --light-blue: #eaf3fb;
+      --text: #243447;
+      --muted: #62758a;
+      --border: #dce5ed;
+      --background: #f5f8fb;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      color: #172033;
-      background: #f5f7fc;
-      line-height: 1.7;
+      background: var(--background);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 17px;
+      line-height: 1.75;
     }
-    header, footer { padding: 22px 6%; background: #fff; }
-    header { border-bottom: 1px solid #e0e5ef; }
-    .brand { font-weight: 800; letter-spacing: 1px; }
-    .hero {
-      padding: 65px 6%;
-      background: linear-gradient(135deg, #fff, #e8edff);
+
+    a {
+      color: var(--blue);
+      overflow-wrap: anywhere;
     }
-    .content { max-width: 850px; margin: auto; }
-    .tag {
-      color: #315ee8;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 2px;
+
+    a:focus-visible {
+      outline: 3px solid #f0b429;
+      outline-offset: 4px;
+    }
+
+    .container {
+      width: min(100% - 36px, 900px);
+      margin-inline: auto;
+    }
+
+    header {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .header-inner {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding-block: 15px;
+    }
+
+    .brand {
+      color: var(--navy);
+      font-size: 21px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-decoration: none;
+    }
+
+    .header-note {
+      color: var(--muted);
       font-size: 13px;
     }
-    h1 { font-size: clamp(36px, 6vw, 58px); line-height: 1.1; }
-    h2 { margin-top: 36px; line-height: 1.25; }
-    .lead { font-size: 19px; color: #58647a; }
+
+    main {
+      padding-block: 42px 64px;
+    }
+
+    .hero {
+      padding: 36px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: 0 8px 28px rgba(16, 42, 67, 0.04);
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1.7px;
+      text-transform: uppercase;
+    }
+
+    h1, h2, h3 {
+      color: var(--navy);
+      line-height: 1.3;
+    }
+
+    h1 {
+      margin: 0 0 18px;
+      font-size: clamp(30px, 5vw, 44px);
+      letter-spacing: -1px;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 27px;
+      letter-spacing: -0.4px;
+    }
+
+    h3 {
+      margin-bottom: 8px;
+      font-size: 19px;
+    }
+
+    p {
+      margin: 0 0 17px;
+    }
+
+    .intro {
+      color: var(--muted);
+      font-size: 19px;
+      line-height: 1.7;
+    }
+
+    .notice {
+      margin-top: 24px;
+      padding: 14px 16px;
+      border-left: 4px solid var(--blue);
+      border-radius: 5px;
+      background: var(--light-blue);
+      font-size: 14px;
+    }
+
     .button {
       display: inline-block;
-      padding: 13px 20px;
-      margin: 12px 8px 8px 0;
-      border-radius: 9px;
+      margin: 10px 0 4px;
+      padding: 14px 22px;
+      border-radius: 8px;
+      background: var(--blue);
+      color: var(--white);
+      font-size: 16px;
+      font-weight: 700;
+      text-align: center;
       text-decoration: none;
-      font-weight: bold;
-      background: #315ee8;
-      color: white;
+      transition: background 0.2s ease;
     }
-    .button.secondary {
-      background: white;
-      color: #172033;
-      border: 1px solid #d4dbea;
+
+    .button:hover {
+      background: #105487;
     }
-    main { padding: 30px 6% 60px; }
-    .panel {
-      padding: 22px;
-      margin: 22px 0;
-      border: 1px solid #e0e5ef;
+
+    .button:focus-visible {
+      outline-color: #f0b429;
+    }
+
+    .section {
+      margin-top: 26px;
+      padding: 32px;
+      background: var(--white);
+      border: 1px solid var(--border);
       border-radius: 14px;
-      background: white;
     }
-    .note {
-      border-left: 4px solid #315ee8;
-      padding: 15px 18px;
-      background: #eaf0ff;
+
+    .section p:last-child {
+      margin-bottom: 0;
     }
-    a { overflow-wrap: anywhere; }
-    footer a { margin-right: 15px; }
-    small { color: #647087; }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 22px;
+    }
+
+    .info-card {
+      padding: 20px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: #fbfdff;
+    }
+
+    .info-card h3 {
+      margin-top: 0;
+    }
+
+    .info-card p {
+      margin-bottom: 0;
+      font-size: 15px;
+    }
+
+    .check-list {
+      padding-left: 22px;
+    }
+
+    .check-list li {
+      margin-bottom: 10px;
+      padding-left: 4px;
+    }
+
+    .faq-item {
+      padding-block: 18px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faq-item:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .faq-item h3 {
+      margin-top: 0;
+    }
+
+    .faq-item p {
+      margin-bottom: 0;
+    }
+
+    .disclosure {
+      padding: 20px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: #f8fafc;
+      font-size: 14px;
+    }
+
+    footer {
+      padding: 28px 0;
+      background: var(--navy);
+      color: #e5edf5;
+      font-size: 14px;
+    }
+
+    footer p {
+      margin-bottom: 10px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 10px 22px;
+      flex-wrap: wrap;
+      margin-block: 16px;
+    }
+
+    .footer-links a {
+      color: #ffffff;
+    }
+
+    .copyright {
+      color: #c4d2df;
+      font-size: 12px;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        font-size: 16px;
+      }
+
+      .container {
+        width: min(100% - 24px, 900px);
+      }
+
+      main {
+        padding-block: 20px 36px;
+      }
+
+      .hero,
+      .section {
+        padding: 23px 19px;
+      }
+
+      .info-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .button {
+        width: 100%;
+      }
+    }
   </style>
 </head>
+
 <body>
   <header>
-    <div class="brand">PRODUCT NOTES</div>
+    <div class="container header-inner">
+      <a class="brand" href="./" aria-label="Product Notes home">
+        PRODUCT NOTES
+      </a>
+      <span class="header-note">Independent product information</span>
+    </div>
   </header>
 
-  <section class="hero">
-    <div class="content">
-      <div class="tag">Independent product overview</div>
-      <h1>The Genius Wave: What to Know Before Buying</h1>
-      <p class="lead">
-        Learn about the advertised digital audio format, review
-        the seller's offer, and consider important questions before
-        making a purchase.
-      </p>
-      <a class="button"
-         href="https://realgeniuswave.com/DSvsl/?aff=marcosnauan96f31e&amp;pid=vsla2"
-         target="_blank" rel="sponsored nofollow noopener">
-        View the Seller's Offer
-      </a>
-      <p><small>
-        This is an independent informational page, not the official
-        product website.
-      </small></p>
-    </div>
-  </section>
+  <main class="container">
+    <article>
+      <section class="hero">
+        <p class="eyebrow">Independent Product Overview</p>
 
-  <main>
-    <article class="content">
-      <h2>What Is The Genius Wave?</h2>
-      <p>
-        The seller markets The Genius Wave as a digital audio product.
-        Before purchasing, review the official product description,
-        delivery details, price, and applicable terms.
-      </p>
+        <h1>The Genius Wave Review: What to Know Before Buying</h1>
 
-      <div class="note">
-        <strong>Keep expectations realistic.</strong>
-        Marketing statements about memory, focus, creativity, or
-        intelligence should not be interpreted as guaranteed or
-        independently proven results.
-      </div>
-
-      <h2>What Should You Check Before Buying?</h2>
-      <div class="panel">
-        <h3>Product format and access</h3>
-        <p>
-          Confirm which audio files are included, how access is
-          delivered, and whether any additional requirements apply.
+        <p class="intro">
+          Considering The Genius Wave? This independent overview explains
+          what to check about the advertised digital audio product, its
+          seller, and the purchase terms before you decide.
         </p>
 
-        <h3>Price and payment terms</h3>
+        <a
+          class="button"
+          href="https://realgeniuswave.com/DSvsl/?aff=marcosnauan96f31e&amp;pid=vsla2"
+          target="_blank"
+          rel="sponsored nofollow noopener noreferrer"
+        >
+          View the Seller's Offer
+        </a>
+
+        <div class="notice">
+          <strong>Independent website:</strong>
+          Product Notes is not the official website of The Genius Wave
+          and is not affiliated with its seller except for the affiliate
+          relationship disclosed on this page.
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>What Is The Genius Wave?</h2>
+
         <p>
-          Check the current total price and payment terms on the
-          seller's checkout page before placing an order.
+          The Genius Wave is marketed as a digital audio product.
+          To understand what you would receive, consult the seller's
+          current product description and check the exact format,
+          included materials, access instructions, and purchase terms.
         </p>
 
-        <h3>Refund policy</h3>
         <p>
-          Read the seller's current refund policy and verify any
-          conditions, deadlines, or exclusions.
+          Audio products can be marketed for different purposes, including
+          relaxation, concentration, or listening routines. However,
+          marketing language alone does not establish that a product
+          improves memory, intelligence, creativity, or cognitive
+          performance.
         </p>
-      </div>
 
-      <h2>Is This Product Right for You?</h2>
-      <p>
-        Consider your needs, budget, and expectations before deciding.
-        Experiences with audio products can vary, and this page does
-        not independently verify claims about cognitive performance.
-        The product should not replace professional medical advice
-        or treatment.
-      </p>
+        <p>
+          This page provides general buying information. It does not
+          claim that The Genius Wave has been independently tested here
+          or that its advertised benefits are scientifically established.
+        </p>
+      </section>
 
-      <h2>Where Can You Find the Official Details?</h2>
-      <p>
-        The seller's website is the place to review the current offer,
-        full product description, checkout terms, and refund conditions.
-      </p>
-      <a class="button"
-         href="https://realgeniuswave.com/DSvsl/?aff=marcosnauan96f31e&amp;pid=vsla2"
-         target="_blank" rel="sponsored nofollow noopener">
-        Visit the Seller's Website
-      </a>
+      <section class="section">
+        <h2>What Should You Check Before Buying?</h2>
 
-      <div class="panel">
+        <p>
+          Before purchasing any digital audio program, take time to
+          review the details that affect your decision.
+        </p>
+
+        <div class="info-grid">
+          <div class="info-card">
+            <h3>1. Product Format</h3>
+            <p>
+              Check whether the offer includes audio files, streaming
+              access, downloads, or other materials. Confirm how you
+              will access the product after payment.
+            </p>
+          </div>
+
+          <div class="info-card">
+            <h3>2. Price and Payment</h3>
+            <p>
+              Review the current price, currency, payment method,
+              and any additional charges shown during checkout.
+              Do not rely on outdated prices.
+            </p>
+          </div>
+
+          <div class="info-card">
+            <h3>3. Refund Policy</h3>
+            <p>
+              Read the seller's refund terms carefully. Check the
+              deadline, eligibility requirements, exclusions, and
+              instructions for requesting a refund.
+            </p>
+          </div>
+
+          <div class="info-card">
+            <h3>4. Product Claims</h3>
+            <p>
+              Distinguish promotional claims from independently
+              supported evidence. Be cautious of guaranteed outcomes
+              or claims that sound too good to be true.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>The Genius Wave Reviews: Questions to Consider</h2>
+
+        <p>
+          When researching The Genius Wave reviews, look beyond
+          promotional descriptions. Useful reviews should clearly
+          distinguish verified product information, personal opinions,
+          and claims that have not been independently confirmed.
+        </p>
+
+        <ul class="check-list">
+          <li>
+            Does the review explain what the product actually includes?
+          </li>
+          <li>
+            Does it identify the source of its information?
+          </li>
+          <li>
+            Does it discuss limitations as well as potential benefits?
+          </li>
+          <li>
+            Does it explain the current price and refund terms accurately?
+          </li>
+          <li>
+            Does it avoid promising guaranteed improvements in
+            intelligence, memory, or focus?
+          </li>
+        </ul>
+
+        <p>
+          This page does not present fabricated customer testimonials,
+          personal-use claims, or an independently verified rating.
+          Check additional sources before relying on any review.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Is The Genius Wave Worth It?</h2>
+
+        <p>
+          Whether a digital audio product is worth purchasing depends
+          on your expectations, budget, the materials provided, and
+          the terms offered by the seller.
+        </p>
+
+        <p>
+          Before making a decision, consider whether the product
+          matches your needs, whether its claims are supported by
+          reliable evidence, and whether you would be comfortable
+          with the purchase even if your personal experience differs
+          from the advertising.
+        </p>
+
+        <p>
+          Avoid spending money you cannot afford to lose, and do not
+          treat promotional statements as a guarantee of results.
+        </p>
+
+        <a
+          class="button"
+          href="https://realgeniuswave.com/DSvsl/?aff=marcosnauan96f31e&amp;pid=vsla2"
+          target="_blank"
+          rel="sponsored nofollow noopener noreferrer"
+        >
+          Check the Current Seller Offer
+        </a>
+
+        <p style="margin-top: 14px; font-size: 13px; color: #62758a;">
+          The seller's website may contain affiliate tracking.
+          Review the seller's information and terms before ordering.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+          <h3>What is The Genius Wave?</h3>
+          <p>
+            It is marketed as a digital audio product. Consult the
+            seller's current description to confirm the format,
+            included materials, and access arrangements.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Where can I find The Genius Wave price?</h3>
+          <p>
+            Check the seller's current offer and checkout page for
+            the applicable price, currency, payment terms, and any
+            additional charges.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Does The Genius Wave guarantee better focus or memory?</h3>
+          <p>
+            This website cannot verify such a guarantee. Do not
+            interpret promotional statements as proof of improved
+            cognitive performance or guaranteed individual results.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>How can I check the refund policy?</h3>
+          <p>
+            Read the current refund policy provided by the seller
+            before purchasing. Confirm all deadlines, requirements,
+            and exclusions directly with the seller.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Is Product Notes the official Genius Wave website?</h3>
+          <p>
+            No. Product Notes is an independent informational website.
+            It does not claim to represent the product or its seller.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Where to Find Official Product Information</h2>
+
+        <p>
+          For the most current information about the product,
+          consult the seller's offer page. Verify the product
+          description, total price, delivery arrangements, terms,
+          and refund policy before making a purchase.
+        </p>
+
+        <a
+          class="button"
+          href="https://realgeniuswave.com/DSvsl/?aff=marcosnauan96f31e&amp;pid=vsla2"
+          target="_blank"
+          rel="sponsored nofollow noopener noreferrer"
+        >
+          Visit the Seller's Website
+        </a>
+
+        <p style="font-size: 13px; color: #62758a; margin-top: 12px;">
+          This link may earn the publisher a commission if a qualifying
+          purchase is completed.
+        </p>
+      </section>
+
+      <section class="section">
         <h2>Affiliate Disclosure</h2>
-        <p>
-          Some links on this website are affiliate links. If you make
-          a purchase through an affiliate link, the publisher may
-          receive a commission at no additional cost to you.
-        </p>
-      </div>
 
-      <h2>About This Website</h2>
-      <p>
-        Product Notes provides independent informational content.
-        This website is not the official website of The Genius Wave
-        and does not claim to represent the product's seller.
-      </p>
+        <div class="disclosure">
+          Some links on Product Notes are affiliate links. If you
+          purchase through these links, the publisher may receive
+          a commission at no additional cost to you. Affiliate
+          relationships do not guarantee product quality or results.
+          Please review the product details and terms independently
+          before making a purchase.
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>About Product Notes</h2>
+
+        <p>
+          Product Notes publishes independent informational content
+          to help readers review products and consider relevant
+          purchasing details. Our goal is to present information
+          clearly, distinguish claims from verified facts, and
+          encourage informed decisions.
+        </p>
+
+        <p>
+          The information on this page is general and may become
+          outdated. Always confirm current product details with
+          the seller. This content is not medical advice and should
+          not replace advice from a qualified professional.
+        </p>
+
+        <p>
+          <strong>Contact:</strong>
+          <a href="mailto:marcosnauan@gmail.com">
+            marcosnauan@gmail.com
+          </a>
+        </p>
+      </section>
     </article>
   </main>
 
   <footer>
-    <p><strong>Product Notes</strong></p>
-    <p>
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="disclosure.html">Affiliate Disclosure</a>
-      <a href="contact.html">Contact</a>
-    </p>
-    <small>
-      Product information and seller terms may change.
-      Always verify current details with the seller.
-    </small>
+    <div class="container">
+      <p><strong>Product Notes</strong></p>
+
+      <p>
+        Independent product information to support informed
+        purchasing decisions.
+      </p>
+
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="./privacy.html">Privacy Policy</a>
+        <a href="./disclosure.html">Affiliate Disclosure</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+
+      <p class="copyright">
+        Product Notes is not the official website of The Genius Wave.
+        Product information and seller terms may change.
+      </p>
+
+      <p class="copyright">
+        © 2026 Product Notes. All rights reserved.
+      </p>
+    </div>
   </footer>
 </body>
 </html>
